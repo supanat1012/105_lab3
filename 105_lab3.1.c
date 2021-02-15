@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main()
-{   int a[20][20],i,j,p[5]={0,0,0,0,0};
+{   int a[20][20],i,j,p[5]={0,0,0,0,0},max=0,humax;
 
     for(i=0;i<5;i++)
     {
@@ -11,73 +11,13 @@ int main()
         }
     }
 
-
-    if(p[0]>p[1])
+    for(i=0;i<5;i++)
     {
-        if(p[0]>p[2])
+        if(max<p[i])
         {
-            if(p[0]>p[3])
-            {
-                if(p[0]>p[4])
-                {
-                    printf("1 %d",p[0]);
-                }
-                else
-                {
-                    printf("5 %d",p[4]);
-                }
-            }
-            else if(p[3]>p[4])
-            {
-                printf("4 %d",p[3]);
-            }
+            max=p[i];
+            humax=i+1;
         }
-        else if(p[2]>p[3])
-        {
-            if(p[2]>p[4])
-            {
-                printf("3 %d",p[2]);
-            }
-        }
-        else if(p[3]>p[4])
-        {
-            printf("4 %d",p[3]);
-        }
-        else
-            printf("5 %d",p[4]);
     }
-    else if(p[1]>p[2])
-    {
-        if(p[1]>p[3])
-            {
-                if(p[1]>p[4])
-                {
-                    printf("2 %d",p[1]);
-                }
-                else
-                {
-                    printf("5 %d",p[4]);
-                }
-            }
-        else if(p[3]>p[4])
-            {
-                printf("4 %d",p[3]);
-            }
-
-        else if(p[2]>p[3])
-        {
-            if(p[2]>p[4])
-            {
-                printf("3 %d",p[2]);
-            }
-        }
-        else if(p[3]>p[4])
-        {
-            printf("4 %d",p[3]);
-        }
-        else
-            printf("5 %d",p[4]);
-    }
-
-
+    printf("%d %d",humax,max);
 }
