@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main()
-{   int a[20][20],i,j,p[5]={0,0,0,0,0},max;
+{   int a[20][20],i,j,p[5]={0,0,0,0,0};
 
     for(i=0;i<5;i++)
     {
