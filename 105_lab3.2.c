@@ -4,7 +4,7 @@ int main()
 
     scanf("%d",&n);
 
-    int ch[n],hu[n],sum2[n];
+    int ch[n],hu[n],sum2[]={0};
 
     for(i=0;i<n;i++)
     {

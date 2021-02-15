@@ -12,13 +12,17 @@ int main()
         {
             printf("%d\n",i);
             a=a/i;
+
+            if(a==1)
+            {
+                printf("%d",a-1);
+            }
         }
         else
         i++;
 
 
     }
-    printf("0");
 
 
 
