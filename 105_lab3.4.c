@@ -1,29 +1,24 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,i,count=0,sum=0,j;
+    int a,b,i,count=0,sum=0,j,max;
 
     scanf("%d",&a);
     int A[a];
     for(i=2;i<=a;i++)
     {
-        for(j=1;j<a;j++)
+        for(j=1;j<i;j++)
         {
             if(i%j==0)
                 count++;
         }
         if(count<=2)
-        A[i-2]=i;
+        max=i;
 
     }
 
-    for(i=0;i<=10;i++)
-    {
-        if(sum<=a)
-        sum=A[i];
 
-    }
 
-    printf("%d",sum);
+    printf("%d",max);
 
 }
