@@ -2,7 +2,7 @@
 int main()
 {   int a[20][20],i,j,p[4]={0},max;
 
-    for(i=0;i<4;i++)
+    for(i=0;i<5;i++)
     {
         for(j=0;j<4;j++)
         {
@@ -11,20 +11,35 @@ int main()
         }
     }
 
-   /* for(i=0;i<4;i++)
+
+    if(p[0]>p[1])
     {
-        for(j=0;j<3;j++)
+        if(p[0]>p[2])
         {
-           p[i]=a[i][j]+a[i][j+1]+p[i];
+            if(p[0]>p[3])
+            {
+                if(p[0]>p[4])
+                {
+                    printf("1 %d",p[0]);
+                }
+                else
+                {
+                    printf("5 %d",p[4]);
+                }
+            }
+            else if(p[3]>p[4])
+            {
+                printf("4 %d",p[3])
+            }
         }
-
-    }*/
-
-    for(j=0;j<4;j++)
+        else if(p[2]>p[3])
         {
-           printf("%d\n",p[j]);
+            if(p[2]>p[4])
+            {
+                printf("2 %d",p[2]);
+            }
         }
-
+    }
 
 
 
