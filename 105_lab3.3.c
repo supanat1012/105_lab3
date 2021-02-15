@@ -1,10 +1,10 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,i=2,s;
+    int a,b,i=2;
 
     scanf("%d",&a);
-    a=s;
+
 
     while(a>1)
     {
@@ -18,7 +18,7 @@ int main()
 
 
     }
-
+    printf("0");
 
 
 
