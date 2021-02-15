@@ -4,7 +4,7 @@ int main()
 
     scanf("%d",&n);
 
-    int ch[n],hu[n],sum2[]={0};
+    int ch[n],hu[n],sum2[n];
 
     for(i=0;i<n;i++)
     {
@@ -15,23 +15,18 @@ int main()
     {
         for(j=0;j<n;j++)
         {
-            if(ch[j]==i)
-            {
-                sum=sum+hu[i];
+            if(ch[i]==i)
+                sum=sum+hu[j];
                 sum2[i]=sum;
-            }
         }
-        sum=0;
     }
-
     for(i=0;i<n;i++)
     {
         if(max<sum2[i])
         {
             max=sum2[i];
+
         }
     }
-
     printf("%d",max);
-
 }
